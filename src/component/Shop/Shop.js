@@ -10,7 +10,7 @@ const Shop = () => {
     useEffect(()=>{
         fetch('products.json')
         .then(res=>res.json())
-        .then(data=>setProducts(data.slice(0,10)))
+        .then(data=>setProducts(data))
     },[]);
 
     useEffect(()=>{
